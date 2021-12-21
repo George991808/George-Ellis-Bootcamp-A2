@@ -22,16 +22,10 @@
     color: var(--light);
   }
  
- /* a {
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  
-    background-color: var(--dark);
-    color: var(--light);
+  a {
+     color: white;
   } 
-   */ 
+    
   h1 {
     font-size: 200%;
   }
@@ -72,13 +66,15 @@
   flex-grow: 1;
   flex-wrap: wrap;
   padding: 30px;
+  width: 90%; 
  }
 
  .mainPortfolio {
   display: flex;
-  flex-grow: 1;
+  flex: 1 1 200xx;
   padding: 30px;
-  /* max-width: 80%; */
+  width: 90%; 
+  justify-content: center;
 
  }
  .A1 {
@@ -92,20 +88,58 @@
   /* max-width: 80%; */
   flex-grow: 4;
  }
- a img {
+
+ .avatar {
+   
+  /* height: 25%; */
+ margin: 20px; 
+  width: 10%;
+  flex: 0 1 200px;
+    padding: 10px;
+    text-align: left;
+    border-style: hidden;
+    border-width: 1px;
+    align-items: left;
+  
+}
+
+.avatar img {
+   
+  /* height: 25%; */
+  width: 80%;
+  
+  
+}
+
+.aboutMe {
+   
+  /* height: 25%; */
+ margin: 20px; 
+  width: 10%;
+  flex: 4 1 200px;
+    padding: 10px;
+    text-align: left;
+    border-style: hidden;
+    border-width: 1px;
+    align-items: left;
+  
+}
+.refaction {
    
     /* height: 25%; */
-   
+   margin: 20px;
     
     
-    width: 100%;
+    width: 80%;
     
   }
-
+a{
+  color:white;
+}
   .mainAssignment {
     /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-    flex: 1 0 200px;
+    flex: 1 1 200px;
     
     text-align: center;
     border-style: solid;
@@ -116,7 +150,7 @@
   .navigation {
     /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-    flex: 1 0 200px;
+    flex: 1 1 200px;
     padding: 10px;
     text-align: center;
     border-style: solid;
@@ -124,7 +158,9 @@
     align-items: center;
   }
  
- 
+ p {
+   text-align: left;
+ }
   
   .navigation header {
     padding: 20px;
@@ -135,14 +171,16 @@
   
 aside {
     display:flex;
-    width: 200px;
+    width: 10%;
     background-color: #b9c6ae;
     /* flex-direction: column; */
     
 
 }
 
-
+aside header {
+  text-align: right;
+}
 
   footer {
     display: flex;
